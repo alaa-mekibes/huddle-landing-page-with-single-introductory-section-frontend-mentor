@@ -31,7 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
+- Solution URL: https://www.frontendmentor.io/solutions/huddle-landing-page-with-a-single-introductory-section-HbFbEO26nn
+  
 - Live Site URL: https://alaa-mekibes.github.io/huddle-landing-page-with-single-introductory-section-challenge10
 
 ## My process
@@ -41,6 +42,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Mobile first
 
 ### What I learned
 
