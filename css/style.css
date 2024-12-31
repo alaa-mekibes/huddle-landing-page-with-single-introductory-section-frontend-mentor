@@ -26,7 +26,8 @@ body {
     background-image: url(../images/bg-mobile.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    position: relative
+    min-height: 100svh;
+    min-width: 100vw;
 }
 
 /* Meduim-Large */
