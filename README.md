@@ -47,6 +47,7 @@ Users should be able to:
 - How to add circle on icon:
 
 ```css
+i {
     display: inline-flex; /* Use flexbox to center the icon */
     justify-content: center;
     align-items: center;
@@ -56,6 +57,7 @@ Users should be able to:
     border: 1px solid;
     color: white;
     font-size: 20px;
+}
 ```
 
 ### Useful resources
