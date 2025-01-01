@@ -33,7 +33,7 @@ Users should be able to:
 
 - Solution URL: https://www.frontendmentor.io/solutions/huddle-landing-page-with-a-single-introductory-section-HbFbEO26nn
   
-- Live Site URL: https://alaa-mekibes.github.io/huddle-landing-page-with-single-introductory-section-challenge10
+- Live Site URL: https://alaa-mekibes.github.io/huddle-landing-page-with-single-introductory-section-frontend-mentor
 
 ## My process
 
