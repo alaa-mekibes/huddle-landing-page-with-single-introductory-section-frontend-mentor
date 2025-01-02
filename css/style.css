@@ -91,15 +91,26 @@ header img {
 }
 @keyframes illustration {
     from {
-        transform: translateY(-3%);
+        transform: translateY(-5%);
     }
     to {
-        transform: translateY(3%);
+        transform: translateY(5%);
     }
+}
+.main__container img:hover {
+    animation-play-state: paused
 }
 @media (min-width: 62rem) {
     .main__container img {
         width: 37.5rem
+    }
+    @keyframes illustration {
+        from {
+            transform: translateY(-3%);
+        }
+        to {
+            transform: translateY(3%);
+        }
     }
 }
 .main__container .text {
