@@ -18,23 +18,32 @@
     padding: 0;
     box-sizing: border-box
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
 body {
     font-family: "Open Sans", serif;
     background-color: var(--Violet);
-    margin: 0 auto;
-    padding: 0 2rem;
     background-image: url(../images/bg-mobile.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     min-height: 100svh;
-    min-width: 100vw;
+    padding: 2rem;
 }
 
 /* Meduim-Large */
 @media (min-width: 62rem) {
     body {
         background-image: url(../images/bg-desktop.svg);
-        padding: .625rem 5rem
+        padding: 3.25rem 5rem 2.5rem 4.375rem
     }
 }
 
@@ -42,128 +51,127 @@ h1, h2, h3,
 h4, h5, h6 {
     font-family: "Poppins", serif;
 }
+img {
+    display: block;
+    max-width: 100%
+}
+ul {
+    list-style: none
+}
 /* End global rules */
 
 /* Start header */
 header {
-    height: 4.5rem;
-    margin-top: 30px
+    margin-bottom: 3.125rem
 }
 header img {
-    max-width: 100%;
-    width: 9.5rem;
+    width: 7.5rem;
+}
+@media (min-width: 62rem) {
+    header img {
+        width: 14rem;
+    }
 }
 /* End header */
 
-/* Start main */
+/* Start .main__container */
 @media (min-width: 62rem) {
-    main {
+    .main__container {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 2.5rem
     }
 }
-main .illustration {
-    padding-top: var(--padding-s);
-    padding-bottom: var(--padding-s)
-}
-main .illustration img {
-    max-width: 100%;
+
+.main__container img {
+    width: 80%;
     margin: 0 auto;
-    display: block;
     animation: illustration 4s linear infinite alternate
 }
 @keyframes illustration {
     from {
-        transform: translateY(-5%);
+        transform: translateY(-3%);
     }
     to {
-        transform: translateY(5%);
+        transform: translateY(3%);
     }
 }
 @media (min-width: 62rem) {
-    main .illustration {
-        flex-basis: 50%
+    .main__container img {
+        width: 37.5rem
     }
 }
-main .text {
+.main__container .text {
     padding-top: var(--padding-s);
     padding-bottom: var(--padding-s);
-    width: 89%;
     margin: 0 auto;
     text-align: center;
     color: var(--White)
 }
-main .text h1 {
+.main__container .text h2 {
     margin-bottom: 1.25rem;
     font-size: 1.8125rem
 }
-main .text p {
+.main__container .text p {
     font-size: var(--FontSize)
 }
-main .text a {
+.main__container .text a {
     display: block;
     color: var(--Violet);
     background-color: var(--White);
     text-decoration: none;
-    padding: .625rem 0;
+    padding: .9rem 0;
     width: 65%;
     margin: 20px auto;
     border-radius: 25px;
     box-shadow: 0px 15px 10px -15px #111;
     transition: var(--Delay)
 }
-main .text a:hover {
+.main__container .text a:hover {
     color: var(--White);
     background-color: var(--Soft-Magenta)
 }
 @media (min-width: 62rem) {
-    main .text {
-        flex-basis: 50%;
+    .main__container .text {
         text-align: left
     }
-    main .text h1 {
-        width: 80%;
-        font-size: 2.1875rem
+    .main__container .text h2 {
+        font-size: 3rem
     }
-    main .text p {
+    .main__container .text p {
         font-size: var(--FontSizeD);
-        width: 79%
+        max-width: 90%;
+        line-height: 1.5rem
     }
-    main .text a {
+    .main__container .text a {
         margin: 1.25rem 0;
         width: 30%;
         text-align: center
     }
 }
-/* End main */
+/* End .main__container */
 /* Start footer */
-footer {
-    margin-top: 1.875rem;
-    margin-bottom: 1.875rem
-}
 footer .icons {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: .9375rem
+    gap: 1rem
 }
 footer .icons a{
-    font-size: var(--FontSizeD);
-    color: var(--White)
-}
-footer .icons i {
+    font-size: 1.2rem;
+    color: var(--White);
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 2rem;
-    height: 2rem;
+    width: 2.1875rem;
+    height: 2.1875rem;
     border-radius: 50%;
     border: 1px solid var(--White);
-    transition: var(--Delay)
+    transition: var(--Delay);
+    text-decoration: none
 }
-footer .icons i:hover {
+footer .icons a:hover {
     color: var(--Soft-Magenta);
     border-color: var(--Soft-Magenta) 
 }
@@ -171,9 +179,6 @@ footer .icons i:hover {
     footer {
         display: flex;
         justify-content: flex-end;
-        margin-top: 0;
-        margin-bottom: 1.875rem;
-        padding: 0 7.1875rem
     }
 }
 /* End footer */
