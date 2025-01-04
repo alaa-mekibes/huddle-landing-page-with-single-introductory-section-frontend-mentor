@@ -62,6 +62,14 @@ i {
 }
 ```
 
+- When i tap this `<a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a>`, i use `<a>` tag without text just a icon. This creates a problem called "Links must have discernible text". We need to add `aria-label` as attribute, for exemple :
+  
+```css
+<a href="#facebook" aria-label="Facebook">
+    <i class="fa-brands fa-facebook-f"></i>
+</a>
+```
+
 ### Useful resources
 
 - [px to rem & rpx & vw (cssrem)](https://marketplace.visualstudio.com/items?itemName=cipchk.cssrem) - This helped me for converting px to rem by Moving the cursor to `px` value, press `Alt + z` to convert rem
