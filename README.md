@@ -72,7 +72,7 @@ i {
 
 ### Useful resources
 
-- [Links must have discernible text]([https://marketplace.visualstudio.com/items?itemName=cipchk.cssrem](https://dequeuniversity.com/rules/axe/4.4/link-name)) - This helped me for fixing this problem.
+- [Links must have discernible text](https://dequeuniversity.com/rules/axe/4.4/link-name) - This helped me for fixing this problem.
 - [Font Awesome](https://fontawesome.com/) - This helped me for adding social media icons to my website
 
 ## Author
