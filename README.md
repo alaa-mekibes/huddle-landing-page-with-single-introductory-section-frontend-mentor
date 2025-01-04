@@ -72,7 +72,8 @@ i {
 
 ### Useful resources
 
-- [px to rem & rpx & vw (cssrem)](https://marketplace.visualstudio.com/items?itemName=cipchk.cssrem) - This helped me for converting px to rem by Moving the cursor to `px` value, press `Alt + z` to convert rem
+- [Links must have discernible text]([https://marketplace.visualstudio.com/items?itemName=cipchk.cssrem](https://dequeuniversity.com/rules/axe/4.4/link-name)) - This helped me for fixing this problem.
+- [Font Awesome](https://fontawesome.com/) - This helped me for adding social media icons to my website
 
 ## Author
 
