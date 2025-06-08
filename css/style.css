@@ -1,4 +1,3 @@
-/* Start variables */
 :root {
     /* colors */
     --Violet: hsl(257, 40%, 49%);
@@ -8,10 +7,8 @@
     --FontSize: 1.0625rem;
     --FontSizeD: 1rem;
     --padding-s: 1.75rem;
-    --Delay: .3s
+    --Delay: .3s;
 }
-/* End variables */
-
 /* Start global rules */
 * {
     margin: 0;
@@ -37,91 +34,43 @@ body {
     background-size: cover;
     min-height: 100svh;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
 }
-
-/* Meduim-Large */
-@media (min-width: 62rem) {
-    body {
-        background-image: url(../images/bg-desktop.svg);
-        padding: 3.25rem 5rem 2.5rem 4.375rem
-    }
-}
-
 h1, h2, h3,
-h4, h5, h6 {
-    font-family: "Poppins", serif;
-}
+h4, h5, h6 {font-family: "Poppins", serif}
 img {
     display: block;
     max-width: 100%
 }
-ul {
-    list-style: none
-}
-/* End global rules */
+ul {list-style: none}
 
 /* Start header */
 header {
-    margin-bottom: 3.125rem
+    margin-bloc-end: 3.125rem
 }
 header img {
     width: 7.5rem;
 }
-@media (min-width: 62rem) {
-    header img {
-        width: 14rem;
-    }
-}
-/* End header */
-
-/* Start .main__container */
-@media (min-width: 62rem) {
-    .main__container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2.5rem
-    }
-}
-
+/* Start main */
+.main_container {flex: 1}
 .main__container img {
     width: 80%;
     margin: 0 auto;
     animation: illustration 4s linear infinite alternate
 }
-@keyframes illustration {
-    from {
-        transform: translateY(-5%);
-    }
-    to {
-        transform: translateY(5%);
-    }
-}
 .main__container img:hover {
     animation-play-state: paused
 }
-@media (min-width: 62rem) {
-    .main__container img {
-        width: 37.5rem
-    }
-    @keyframes illustration {
-        from {
-            transform: translateY(-3%);
-        }
-        to {
-            transform: translateY(3%);
-        }
-    }
-}
 .main__container .text {
-    padding-top: var(--padding-s);
-    padding-bottom: var(--padding-s);
+    padding-bloc-start: var(--padding-s);
+    padding-bloc-end: var(--padding-s);
     margin: 0 auto;
     text-align: center;
     color: var(--White)
 }
 .main__container .text h2 {
-    margin-bottom: 1.25rem;
+    margin-bloc-end: 1.25rem;
     font-size: 1.8125rem
 }
 .main__container .text p {
@@ -143,25 +92,6 @@ header img {
     color: var(--White);
     background-color: var(--Soft-Magenta)
 }
-@media (min-width: 62rem) {
-    .main__container .text {
-        text-align: left
-    }
-    .main__container .text h2 {
-        font-size: 3rem
-    }
-    .main__container .text p {
-        font-size: var(--FontSizeD);
-        max-width: 90%;
-        line-height: 1.5rem
-    }
-    .main__container .text a {
-        margin: 1.25rem 0;
-        width: 30%;
-        text-align: center
-    }
-}
-/* End .main__container */
 /* Start footer */
 footer .icons {
     display: flex;
@@ -169,7 +99,7 @@ footer .icons {
     align-items: center;
     gap: 1rem
 }
-footer .icons a{
+footer .icons a {
     font-size: 1.2rem;
     color: var(--White);
     display: inline-flex;
@@ -186,10 +116,58 @@ footer .icons a:hover {
     color: var(--Soft-Magenta);
     border-color: var(--Soft-Magenta) 
 }
+@keyframes illustration {
+    from {
+        transform: translateY(-5%);
+    }
+    to {
+        transform: translateY(5%);
+    }
+}
 @media (min-width: 62rem) {
+    body {
+        background-image: url(../images/bg-desktop.svg);
+        padding: 3.25rem 5rem 2.5rem 4.375rem
+    }
+    header img {
+        width: 14rem;
+    }
+    .main__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem
+    }
+    .main__container img {
+        width: 37.5rem
+    }
+    .main__container .text {
+        text-align: left
+    }
+    .main__container .text h2 {
+        font-size: 3rem
+    }
+    .main__container .text p {
+        font-size: var(--FontSizeD);
+        max-width: 90%;
+        line-height: 1.5rem
+    }
+    .main__container .text a {
+        margin: 1.25rem 0;
+        width: 30%;
+        text-align: center
+    }
     footer {
         display: flex;
         justify-content: flex-end;
     }
+
+    @keyframes illustration {
+        from {
+            transform: translateY(-3%);
+        }
+        to {
+            transform: translateY(3%);
+        }
+    }
 }
-/* End footer */
