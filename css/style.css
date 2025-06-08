@@ -36,6 +36,7 @@ body {
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    gap: 2rem
 }
 h1, h2, h3,
 h4, h5, h6 {font-family: "Poppins", serif}
@@ -53,7 +54,7 @@ header img {
     width: 7.5rem;
 }
 /* Start main */
-.main_container {flex: 1}
+.main__container {flex: 1}
 .main__container img {
     width: 80%;
     margin: 0 auto;
